@@ -1,33 +1,37 @@
 //Student Grade Generator
 
-function studentGrade(studentMarks) {
-    // Check if input is between 0 and 100
-    if (studentMarks <0 || studentMarks >100) {   
-        return "Invalid,student marks should be between 0 and 100"
+//student grade generator
+function studentGrade(score) {
+    if (score > 100 || score < 0) {
+        console.log('Invalid score');
+        return 'Invalid score'
     }
-    }
-    // Determine the studentGrade based on the input marks
-        let Studentgrade;
-        let studentMarks;
-        if (studentMarks > 79) {
-            Studentgrade = 'A';
-        } 
-        else if (studentMarks >= 60 && studentMarks <= 79) {
-            Studentgrade = 'B';
-        } 
-        else if (studentMarks >= 49 && studentMarks <= 59) {
-            Studentgrade = 'C';
-        } 
-        else if (studentMarks >= 40 && studentMarks <= 49) {
-            Studentgrade = 'D';
-        } 
-        else {
-            Studentgrade = 'E';
-        }
-// function studentGrade() {  
-         let prompt= ("Enter student marks") // prompt to input students marks
     
-        studentGrade(studentMarks) // checks grade
+
+studentGrade(-3)
+studentGrade(120)
+let grade=''
+    if(score > 79) {
+        grade = 'A'
+    } else if (score >= 60 && score <=79) {
+        grade = 'B'
+    } else if (score >49 && score <= 59) {
+        grade = 'C'
+        
+    }else if (score >= 40 && score <=49) {
+        grade = 'D'
+    }
+    else{
+        grade ='E'
+    }
+    return grade
+}
+studentGrade()
+console.log(studentGrade('score')); // checks grade
+
+let prompt= ("Enter student marks") // prompt to input students marks
+    
+        
     
     
         
