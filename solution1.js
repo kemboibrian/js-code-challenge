@@ -8,8 +8,8 @@ function studentGrade(score) {
     }
     
 
-studentGrade(-3)
-studentGrade(120)
+//studentGrade(-1)
+//studentGrade(101)
 let grade=''
     if(score > 79) {
         grade = 'A'
